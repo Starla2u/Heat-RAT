@@ -1,0 +1,20 @@
+﻿  HeatRAT.cpp
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(341,14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(455,14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(784,14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1187,14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1565,14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1774,21): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1782,13): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1790,13): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1798,15): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1825,24): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1833,14): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1841,13): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+D:\C++\projects\Projekts\HeatRAT\HeatRAT\HeatRAT.cpp(1849,15): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+  Создание кода
+  19 of 227 functions ( 8.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    9 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  HeatRAT.vcxproj -> D:\C++\projects\Projekts\HeatRAT\x64\Release\HeatRAT.exe

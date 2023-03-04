@@ -1,3 +1,4 @@
+<a id ="up"></a>
 ![logo](files_for_GitHub/LOGO.png)
 {RAT+STEALER}
 ---
@@ -138,3 +139,9 @@ using for: booom
 ![image](files_for_GitHub/Screenshot_6.png)
 
 ---
+📲Contacts
+---
+__Discord: 𝔰𝔦𝔩𝔳𝔢𝔯 𝔰𝔥𝔞𝔡𝔬𝔴#5304__
+
+---
+[go up](#up)

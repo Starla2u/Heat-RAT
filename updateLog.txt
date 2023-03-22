@@ -1,0 +1,31 @@
+--------------------------------------
+22.03.2023
+v1.3.0
+↓changes↓
+◦ fixed some bugs
+◦ improved connection security
+◦ fixed build ERRORS (ERROR ==> 485,ERROR ==> 658)
+--------------------------------------
+22.03.2023
+v1.2.0
+↓changes↓
+◦ fixed some bugs
+◦ fixed build ERROR ==> 745
+--------------------------------------
+11.03.2023
+v1.1.0
+↓changes↓
+◦ fixed some bugs
+◦ added some new functions is session
+◦ Fixed compatibility issues
+--------------------------------------
+08.03.2023
+v1.0.5
+First release
+↓changes↓
+◦ fixed some bugs
+--------------------------------------
+06.03.2023
+v1.0.0
+First pre-release
+--------------------------------------

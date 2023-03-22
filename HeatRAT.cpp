@@ -1,12 +1,11 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include <Windows.h>
 #include <fstream>
 #include <string>
+//#include<curl/curl.h> 
 
 
 using namespace std;
-
 
 
 
@@ -51,6 +50,10 @@ int main()
 	string logs = "Modules\\Grabbed\\logs.txt";
 	//string user = "Modules\\Grabbed\\users.txt";
 	//string prefrences = "Modules\\Preferences\\ports.txt";
+	string dll1 = "Modules\\dlls\\libstdc++-6.dll";
+	string dll4 = "Modules\\dlls\\ucrtbased.dll";
+	string dll2 = "Modules\\dlls\\msvcp140d.dll";
+	string dll3 = "Modules\\dlls\\vcruntime140d.dll";
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
@@ -151,6 +154,15 @@ int main()
 	
 }
 
+
+wstring ExePath() {
+	TCHAR buffer[MAX_PATH] = { 0 };
+	GetModuleFileName(NULL, buffer, MAX_PATH);
+	wstring::size_type pos = wstring(buffer).find_last_of(L"\\/");
+	return wstring(buffer).substr(0, pos);
+}
+
+
 void Help(string path) 
 {
 
@@ -184,7 +196,7 @@ void Build()
 {
 	string ports = "Modules\\Preferences\\ports.txt";
 	bool openPort = false;
-
+	char stub[] = "Modules\\stub\\Stub.exe";
 
 	cout << "\n\n";
 
@@ -260,7 +272,15 @@ void Build()
 			Sleep(500*(i/10));
 		}
 		printf("]\n\n");
-		printf("fixing some errors...\n");
+		printf("checking...\n");
+		printf("[");
+		for (int i = 0; i <= 60; i++)
+		{
+			printf("=");
+			Sleep(100);
+		}
+		printf("]\n\n");
+		printf("fixing...\n");
 		printf("[");
 		for (int i = 0; i <= 60; i++)
 		{
@@ -268,11 +288,19 @@ void Build()
 			Sleep(500);
 		}
 		printf("]\n\n");
-		col = 4;
-		SetConsoleTextAttribute(hConsole, col);
-		printf("can't fix ERROR ==> 745\n");
-		col = 11;
-		SetConsoleTextAttribute(hConsole, col);
+
+		if (rename(stub, NULL) != 0) {
+			col = 4;
+			SetConsoleTextAttribute(hConsole, col);
+			printf("can't fix ERROR ==> 658\n");
+		}
+		else 
+		{
+			col = 2;
+			SetConsoleTextAttribute(hConsole, col);
+			printf("done!!!\n");
+		}
+
 
 	}
 	else

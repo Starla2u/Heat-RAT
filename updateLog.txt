@@ -1,4 +1,11 @@
 --------------------------------------
+23.03.2023
+v1.4.0
+↓changes↓
+◦ fixed bug with opening ports
+◦ fixed bug with disappearing stub
+◦ fixed bug with re-writing
+--------------------------------------
 22.03.2023
 v1.3.0
 ↓changes↓

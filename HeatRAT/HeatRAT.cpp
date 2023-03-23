@@ -677,11 +677,11 @@ void Ports(string logo)
 			cin >> port;
 			col = 8;
 			SetConsoleTextAttribute(hConsole, col);
-			printf("type (TPC/UDP/ALL): ");
+			printf("type (TCP/UDP/ALL): ");
 			col = 11;
 			SetConsoleTextAttribute(hConsole, col);
 			cin >> something;
-			if (something != "TPC" && something != "UDP" && something != "ALL")
+			if (something != "TCP" && something != "UDP" && something != "ALL")
 			{
 				col = 4;
 				SetConsoleTextAttribute(hConsole, col);
@@ -701,7 +701,7 @@ void Ports(string logo)
 					Sleep(2);
 				}
 				printf("]\n");
-				if (stoi(port) >= 1025 && stoi(port) <= 5000)
+				if (stoi(port) >= 1025 && stoi(port) <= 5000 | stoi(port) == 80)
 				{
 					ofstream file(prefrences, ios::app);
 					if (file.is_open())

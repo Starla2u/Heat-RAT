@@ -126,7 +126,7 @@ using for: booom
 
 ![image](files_for_GitHub/Screenshot_2.png)
 
-![image](files_for_GitHub/Screenshot_3.png)
+![image](files_for_GitHub/Screenshot_7.png)
 
 ---
  ### ⚙How to set up Heat:::RAT

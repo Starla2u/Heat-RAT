@@ -129,9 +129,9 @@ using for: booom
 ![image](files_for_GitHub/Screenshot_3.png)
 
 ---
- 
- 
- 
+ ### ⚙How to set up Heat:::RAT
+ (This is a fairly large topic, so in order not to stuff it into the readme, I made a separate site for it.)[https://sites.google.com/view/heat-rat]
+ ---
 ### 🎴Overview
 
 ![image](files_for_GitHub/Screenshot_4.png)

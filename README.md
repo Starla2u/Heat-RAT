@@ -5,24 +5,21 @@
 🔭Program for remote control of windows computers via cmd. Written in C++
 
 ---
- 
- 
- 
-⛔Disclaimer⛔
----
+
+### ⛔Disclaimer⛔
 I, the creator, am __NOT__ responsible for any actions, and or damages, caused by this software. You __BEAR__ the full responsibility of your actions and acknowledge that this software was created for educational purposes only. This software's main purpose is __NOT__ to be used maliciously, or on any system that you do not own, or have the right to use. __By using this software, you automatically agree to the above.__
 
 ---
-❗❗Request❗❗
----
+### ❗❗Request❗❗
+
 __Don't upload builded rat to Virustotal__. The more often you upload it, the more and faster antiviruses begin to recognize its signature.
 
 ---
  
  
  
-📠Functions:
----
+### 📠Functions:
+
 command = "!screenshot"
 using to : do a screenshot and sent to you
 
@@ -123,8 +120,8 @@ using for: booom
  
  
  
-🔨Building
----
+### 🔨Building
+
 ![image](files_for_GitHub/Screenshot_1.png)
 
 ![image](files_for_GitHub/Screenshot_2.png)
@@ -135,8 +132,8 @@ using for: booom
  
  
  
-🎴Overview
----
+### 🎴Overview
+
 ![image](files_for_GitHub/Screenshot_4.png)
 
 ![image](files_for_GitHub/Screenshot_5.png)
@@ -144,19 +141,21 @@ using for: booom
 ![image](files_for_GitHub/Screenshot_6.png)
 
 ---
-💰 Donate
----
+
+### 💰 Donate
+
    <a href="https://www.donationalerts.com/r/nick_vinesmoke"><img src="https://img.shields.io/badge/Donationalerts-F37623?style=for-the-badge&logo=Cash%20App&logoColor=white"></a>
 
 ---
-📲Contacts
----
+### 📲Contacts
+
 open [issues](https://github.com/Nick-Vinesmoke/Heat-RAT/issues) or [pull requests](https://github.com/Nick-Vinesmoke/Heat-RAT/pulls)
 
 or 
 
 <a href="https://github.com/Nick-Vinesmoke"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
    <a href="https://discordapp.com/users/798503509522645012/"><img src="https://img.shields.io/badge/Discord-003E54?style=for-the-badge&logo=Discord&logoColor=white"></a>
+   
 ---
 [go up](#up)
 
